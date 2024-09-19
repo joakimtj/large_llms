@@ -1,88 +1,185 @@
-\documentclass{article}
+\documentclass[12pt]{article}
+\usepackage{amsmath}
 \usepackage{graphicx}
+\usepackage{hyperref}
+\usepackage{setspace}
+\usepackage{geometry}
+\usepackage{color}
+\usepackage{soul}
 
-\title{The Future of Software Engineering with Quantum Computing}
-\author{
-    Joakim Tollefsen Johannesen\\
-    \texttt{joakimtj@hiof.no}
-    \and 
-    ChatGPT 4o\\
-    \texttt{openai.com/index/hello-gpt-4o/}
-}
-\date{2024}
+\geometry{margin=1in}
+
+\title{The Impact of Social Media on Mental Health}
+\author{ }
+\date{}
 
 \begin{document}
+
+\setulcolor{red}
+
 \maketitle
 
 \section{Introduction}
-Quantum computing is rapidly emerging as one of the most transformative technologies of the 21st century. Unlike classical computers, which process information as binary bits (0s and 1s), quantum computers use quantum bits, or qubits, that can exist in multiple states simultaneously due to the principles of quantum superposition and entanglement. This radically different mode of computation opens up possibilities for solving problems that are currently intractable for classical systems. As the field matures, it will undoubtedly have significant implications for software engineering. This paper explores the potential future of software engineering in the context of quantum computing, discussing the challenges, opportunities, and necessary shifts in paradigms that will shape the next generation of software development.
 
-\section{Understanding Quantum Computing}
-To grasp how quantum computing will influence software engineering, it's essential to understand the fundamental differences between classical and quantum systems. In classical computing, the most basic unit of information is a bit, which can either be in a state of 0 or 1. The operations in a classical computer, like arithmetic calculations, logical comparisons, and data storage, are all based on manipulating these binary bits.
-Quantum computing, however, leverages the principles of quantum mechanics, particularly superposition and entanglement. A qubit, the quantum counterpart of a bit, can represent both 0 and 1 simultaneously, thanks to superposition. This allows quantum computers to process an enormous number of possibilities at once. Entanglement, another quantum property, enables qubits that are entangled to be connected in such a way that the state of one qubit instantly influences the state of the other, even across large distances. These properties allow quantum computers to solve certain classes of problems exponentially faster than classical computers.
+In the digital age, social media has become a fundamental part of everyday life, influencing how individuals connect, share, and consume information. Platforms like Facebook, Instagram, Twitter, and TikTok enable users to engage in social networking, self-expression, and virtual communities. While social media offers numerous benefits, such as keeping people connected across distances, providing a platform for marginalized voices, and fostering professional networking, there is growing concern about its impact on mental health. This article explores the complex relationship between social media use and mental health, focusing on both the potential benefits and adverse effects, while also considering the underlying mechanisms and moderating factors that influence this relationship.
 
-\section{Quantum Computing and Its Relevance to Software Engineering}
-Software engineering has traditionally been based on classical computing principles. Programming languages, algorithms, data structures, and architectures are all designed with the binary logic of classical systems in mind. Quantum computing introduces a new realm of possibilities, which challenges the very foundations of how software is designed, developed, and executed.
+\section{The Growth of Social Media Use}
 
-\section{Impact on Algorithms}
-One of the most immediate implications of quantum computing for software engineering is in the design and implementation of algorithms. Quantum algorithms, such as Shor’s algorithm for factoring large numbers or Grover’s algorithm for database searching, have shown that quantum systems can outperform classical systems for specific tasks. These algorithms could revolutionize fields like cryptography, optimization, machine learning, and simulation, areas where classical computers struggle to handle complex computations efficiently.
-For software engineers, this means a shift from classical algorithmic thinking to quantum algorithm development. Classical algorithms are often designed to work with a single set of inputs and process them sequentially or in parallel. Quantum algorithms, by contrast, leverage superposition to handle multiple inputs simultaneously, requiring a different approach to problem-solving. Engineers will need to familiarize themselves with quantum programming languages and frameworks, such as Qiskit (IBM’s quantum programming language) or Microsoft’s Q\#.
+Social media has experienced exponential growth since the early 2000s, with billions of active users worldwide. According to recent statistics, as of 2023, there are approximately 4.9 billion active social media users, accounting for more than half of the global population \cite{statista2023}. The rise of smartphones and ubiquitous internet access has fueled this growth, making social media accessible at any time and from anywhere. \ul{Adolescents and young adults, in particular, are heavy users, with studies showing that 90\% of teens use social media regularly} \cite{smith2018}.
 
-\section{New Programming Paradigms}
-Quantum computing’s unique properties necessitate the development of new programming paradigms. Classical programming relies on deterministic logic, where inputs yield predictable outputs. In contrast, quantum computing introduces an element of probabilistic outcomes due to the uncertainty inherent in quantum mechanics. Writing code for quantum systems requires developers to think probabilistically rather than deterministically.
-One of the emerging paradigms in quantum programming is quantum gate-based computation, analogous to logic gates in classical computing. Quantum gates manipulate qubits, and sequences of gates form quantum circuits, the building blocks of quantum algorithms. Engineers will need to master the art of designing these circuits, considering both the potential solutions and the probabilities associated with each outcome.
-Another important paradigm is quantum annealing, a method of solving optimization problems by simulating the behavior of quantum systems as they evolve towards a lower energy state. Quantum annealers, such as those developed by D-Wave Systems, offer another avenue for software engineers to explore new optimization techniques.
+This widespread use has led to the integration of social media into nearly all aspects of life, including education, entertainment, politics, and social interaction. While these platforms provide opportunities for connection and communication, they also expose users to a variety of psychological and emotional experiences, both positive and negative.
 
-\section{Challenges in Quantum Software Engineering}
-While the potential of quantum computing is immense, several challenges remain for its integration into software engineering practices.
+\section{The Positive Impacts of Social Media on Mental Health}
 
-\subsection{Lack of Quantum Software Development Tools}
+Social media is not inherently harmful; it offers a range of positive mental health benefits for many users. For example, these platforms can foster social connectedness, provide support networks, and enable self-expression, all of which contribute to improved mental well-being.
 
-Unlike classical software development, where a rich ecosystem of integrated development environments (IDEs), compilers, debuggers, and testing frameworks exist, the tools available for quantum software development are still in their infancy. The development of reliable and user-friendly tools is crucial for the widespread adoption of quantum software engineering.
-Frameworks like Qiskit and Microsoft’s Q\# are making strides in this direction, but they still lack the robustness and feature sets of classical counterparts like Python or Java. As quantum computing matures, the development of specialized IDEs, performance analysis tools, and debugging utilities will become essential.
+\subsection{Social Support and Connection}
 
-\subsection{Quantum-Classical Hybrid Systems}
-For the foreseeable future, quantum computers will likely work in tandem with classical computers. Quantum-classical hybrid systems are necessary because most practical problems still rely heavily on classical processing, and quantum computers excel only in specific domains. Engineers will need to design software that efficiently offloads tasks between classical and quantum systems, creating seamless interactions between these two fundamentally different paradigms.
-This hybrid approach necessitates new programming models that allow developers to write code that runs on both quantum and classical hardware. Languages like Python, commonly used for quantum programming, are being adapted to support quantum-classical integration, but the complexity of these systems presents ongoing challenges for developers.
+One of the primary benefits of social media is its ability to foster social connection. \ul{Studies have shown that social support is a critical factor in promoting mental health and well-being. Social media provides a platform for individuals to maintain relationships, especially when face-to-face interaction is not possible} \cite{hampton2014}. It allows users to communicate with family and friends, build new relationships, and join online communities centered around shared interests or identities.
 
-\subsection{Error Correction and Fault Tolerance}
-Quantum computers are incredibly sensitive to noise and environmental factors. Unlike classical systems, where error correction is relatively straightforward, quantum error correction is extremely complex. Qubits are prone to decoherence, where they lose their quantum state, leading to errors in computation. The development of error-correcting codes for quantum systems is still an area of active research.
-For software engineers, this means designing quantum algorithms and applications with error tolerance in mind. Developers will need to account for the probabilistic nature of quantum errors, utilizing techniques like redundancy and quantum error-correcting codes. This adds another layer of complexity to the already challenging task of quantum software development.
+Online support groups, particularly for individuals dealing with mental health issues, chronic illnesses, or marginalized identities, have proven to be highly beneficial. These platforms can offer a sense of belonging, reduce feelings of isolation, and provide a space to share personal experiences and seek advice from others who are facing similar challenges \cite{lenhart2015}.
 
-\section{Opportunities for Software Engineers in a Quantum Future}
+\subsection{Self-Expression and Identity Exploration}
 
-Despite the challenges, the rise of quantum computing offers tremendous opportunities for software engineers. As the technology matures, it will open up new fields of research and innovation.
+Social media also provides users with a space for self-expression and identity exploration, particularly for adolescents and young adults. Research suggests that social media can be a valuable tool for exploring identity, developing a sense of self, and finding one’s voice in a supportive community \cite{valkenburg2006}. By sharing personal stories, photos, and thoughts, users can engage in creative self-expression and build their online persona, which may contribute to a greater sense of self-esteem and empowerment.
 
-\subsection{New Industries and Applications}
+For marginalized groups, such as LGBTQ+ individuals or people with disabilities, social media can serve as a safe space to express their identities without fear of judgment. Online communities offer validation, support, and representation that may be lacking in their offline environments, helping to bolster mental health and resilience \cite{lenhart2015}.
 
-Quantum computing has the potential to revolutionize industries ranging from pharmaceuticals to finance. For example, quantum computers could simulate molecular structures, helping researchers discover new drugs and materials. In finance, they could optimize portfolios, manage risk, and improve trading strategies. Engineers who can develop software to harness quantum computing for these applications will be in high demand.
+\subsection{Mental Health Awareness and Advocacy}
 
-\subsection{Quantum Machine Learning} 
+Another positive impact of social media is its role in raising awareness about mental health issues. Platforms such as Instagram, Twitter, and TikTok have become powerful tools for mental health advocacy, providing a space for individuals and organizations to share information, break stigmas, and promote mental health resources \cite{smith2018}. Mental health professionals, influencers, and advocacy groups use these platforms to disseminate information on coping strategies, self-care tips, and crisis intervention resources, helping users to better understand and manage their mental health.
 
-Machine learning, one of the most transformative fields of classical computing, stands to benefit enormously from quantum computing. Quantum machine learning (QML) leverages the power of quantum systems to process and analyze massive datasets more efficiently than classical systems. Software engineers working in artificial intelligence and machine learning will need to adapt to quantum algorithms that can enhance model training, classification, and optimization tasks.
+The \#MentalHealthAwareness movement, for instance, has gained significant traction on social media, encouraging open dialogue about mental health issues and helping to normalize discussions around depression, anxiety, and other mental health challenges. This greater visibility can lead to earlier recognition of symptoms, increased help-seeking behavior, and reduced stigma, which are critical factors in addressing mental health concerns \cite{smith2018}.
 
-\section{Cybersecurity and Cryptography}
+\section{Negative Impacts of Social Media on Mental Health}
 
-Quantum computing poses both risks and opportunities for cybersecurity. Shor’s algorithm, for instance, threatens current cryptographic systems by enabling efficient factorization of large numbers, breaking many of the encryption techniques that secure modern communication. However, quantum cryptography, such as quantum key distribution (QKD), offers a new level of security that is theoretically immune to eavesdropping.
-Engineers working in the cybersecurity domain will need to develop quantum-resistant algorithms and explore the potential of quantum cryptography to ensure the security of future communications and transactions.
-Education and Skill Development for Quantum Software Engineering
-The advent of quantum computing requires a shift in the education and training of software engineers. Traditional computer science curricula focus on classical computation, with little to no emphasis on quantum mechanics or quantum algorithms. To prepare the next generation of engineers, universities and educational institutions will need to incorporate quantum computing into their programs.
+While social media can have positive effects, growing evidence suggests that it can also negatively impact mental health, particularly when used excessively or in ways that promote harmful social comparisons, cyberbullying, or exposure to harmful content.
 
-\subsection{Interdisciplinary Education}
+\subsection{Social Comparison and Envy}
 
-Quantum computing lies at the intersection of physics, mathematics, and computer science. Engineers will need to develop a solid understanding of quantum mechanics, linear algebra, and probability theory. This interdisciplinary approach requires a rethinking of traditional computer science education, emphasizing a broader skill set that includes quantum theory.
+One of the most commonly discussed negative effects of social media is the phenomenon of social comparison, where users compare their lives to the curated, often idealized images of others \cite{lup2015}. Social media platforms, particularly image-based ones like Instagram, are rife with opportunities for comparison, as users are constantly exposed to pictures of others’ successes, beauty, and lifestyles. This can lead to feelings of inadequacy, envy, and low self-esteem.
 
-\subsection{Lifelong Learning and Professional Development}
- 
-Quantum computing is still a rapidly evolving field. As new algorithms, hardware, and programming techniques emerge, software engineers will need to engage in lifelong learning to stay current. Professional development programs, online courses, and certifications in quantum programming languages and frameworks will be essential for keeping up with the latest advancements.
+Research has shown that social comparison on social media is associated with negative mental health outcomes, including depression, anxiety, and body dissatisfaction \cite{lup2015}. Individuals who spend more time on social media are more likely to engage in upward social comparisons (comparing themselves to those they perceive as better off), which can exacerbate feelings of inadequacy and negatively impact their self-worth \cite{lup2015}.
+
+\subsection{Cyberbullying and Online Harassment}
+
+Cyberbullying and online harassment are significant concerns related to social media use, particularly for adolescents and young adults. The anonymity provided by the internet can embolden individuals to engage in harmful behaviors that they might not exhibit in face-to-face interactions \cite{tokunaga2010}. Cyberbullying can take many forms, including name-calling, spreading rumors, and sharing harmful or private content about someone without their consent.
+
+The mental health consequences of cyberbullying are severe and well-documented. Victims of cyberbullying often experience increased levels of anxiety, depression, and suicidal ideation \cite{tokunaga2010}. Unlike traditional bullying, cyberbullying can occur at any time, following the victim into their home through their digital devices, which can make it even more pervasive and damaging \cite{tokunaga2010}.
+
+\subsection{Addiction and Problematic Use}
+
+Another negative impact of social media on mental health is the potential for addiction and problematic use. Social media platforms are designed to be engaging, using algorithms that promote constant interaction and keep users hooked through notifications, likes, and shares \cite{andreassen2017}. This design can lead to compulsive behaviors and excessive use, which has been linked to poor mental health outcomes.
+
+Studies have shown that excessive social media use is associated with increased levels of depression, anxiety, and sleep disturbances \cite{andreassen2017}. Individuals who spend an inordinate amount of time on social media may experience a sense of disconnection from their offline lives, contributing to feelings of loneliness and isolation. Additionally, social media addiction can interfere with daily responsibilities, academic performance, and real-world social relationships, further exacerbating mental health problems \cite{andreassen2017}.
+
+\subsection{Fear of Missing Out (FOMO)}
+
+The fear of missing out (FOMO) is another negative consequence of social media use, particularly among younger users. FOMO refers to the anxiety or stress that arises from the belief that others are having more rewarding experiences than oneself \cite{przybylski2013}. Social media amplifies FOMO by providing constant updates on friends’ activities, vacations, social gatherings, and achievements, creating a sense of exclusion or inferiority for those who feel left out.
+
+Research has found that FOMO is associated with negative mental health outcomes, including increased levels of anxiety, depression, and stress \cite{przybylski2013}. Individuals who experience FOMO are more likely to engage in unhealthy social media habits, such as checking their accounts frequently or comparing themselves to others, further exacerbating feelings of inadequacy \cite{przybylski2013}.
+
+\section{Mechanisms Linking Social Media Use and Mental Health}
+
+The relationship between social media use and mental health is complex and influenced by a variety of moderating factors, including the nature of social media use, individual differences, and the social context in which the platforms are used.
+
+\subsection{Passive vs. Active Use}
+
+One important factor is the distinction between passive and active social media use. Passive use involves scrolling through feeds, consuming content without interacting, and engaging in social comparisons. Research suggests that passive use is more strongly associated with negative mental health outcomes, as it can lead to feelings of envy, inadequacy, and isolation \cite{gerson2017}.
+
+In contrast, active use involves engaging with others by commenting, sharing, and participating in conversations. Active social media use is generally linked to more positive outcomes, such as increased social connectedness and perceived social support \cite{gerson2017}. This suggests that how individuals use social media—whether passively or actively—plays a significant role in determining its impact on mental health.
+
+\subsection{Individual Differences}
+
+Not everyone experiences social media in the same way, and individual differences play a key role in moderating its effects on mental health. For example, individuals with preexisting mental health conditions, such as depression or anxiety, may be more vulnerable to the negative effects of social media, such as cyberbullying or social comparison \cite{hampton2014}. Conversely, individuals with high levels of self-esteem or emotional resilience may be better equipped to navigate the challenges of social media without experiencing significant mental health consequences.
+
+Age and developmental stage also influence how social media affects mental health. Adolescents, who are in the process of developing their identities and are more susceptible to peer influence, may be particularly vulnerable to the negative effects of social comparison and cyberbullying \cite{lenhart2015}.
+
+\subsection{Cultural and Social Context}
+
+Cultural and social factors also shape the relationship between social media use and mental health. For example, cultural norms around body image, success, and self-presentation can influence the degree to which individuals engage in social comparison on platforms like Instagram \cite{valkenburg2006}. Additionally, the presence or absence of supportive online communities can affect how social media impacts mental health. In cultures where mental health stigma is high, online communities may provide a valuable source of support and validation, reducing feelings of isolation and promoting help-seeking behavior \cite{valkenburg2006}.
+
+\section{Interventions and Strategies for Mitigating the Negative Impact of Social Media}
+
+Given the potential risks associated with social media use, it is important to explore interventions and strategies to mitigate its negative impact on mental health. These strategies can be implemented at both the individual and societal levels.
+
+\subsection{Digital Literacy and Healthy Social Media Use}
+
+One of the most effective ways to reduce the negative impact of social media is through education and digital literacy. Teaching individuals, especially adolescents and young adults, how to use social media in a healthy and mindful way can help mitigate its negative effects \cite{gerson2017}. This includes educating users about the dangers of social comparison, the importance of curating a positive online environment, and strategies for managing time spent on social media.
+
+\subsection{Social Media Platforms’ Responsibility}
+
+Social media companies also have a responsibility to address the mental health impact of their platforms. This can include developing features that promote positive mental health, such as tools for limiting screen time, providing resources for individuals experiencing mental health crises, and implementing algorithms that prioritize well-being over engagement \cite{statista2023}.
+
+For example, Instagram has introduced features that allow users to hide likes, reducing the emphasis on social validation and comparison. Similarly, platforms can implement stricter measures to combat cyberbullying and harassment, including better reporting systems and algorithms that detect harmful content \cite{statista2023}.
+
+\subsection{Professional Mental Health Support}
+
+For individuals who experience significant mental health challenges related to social media use, seeking professional help may be necessary. Therapists and mental health professionals can work with individuals to develop coping strategies for managing social media use, address underlying issues such as low self-esteem or anxiety, and provide support for those dealing with cyberbullying or online harassment \cite{smith2018}.
 
 \section{Conclusion}
 
-Quantum computing is poised to have a profound impact on software engineering, reshaping how engineers design, develop, and execute software. While the field is still in its early stages, it presents significant opportunities for innovation in algorithm design, programming paradigms, and new applications across various industries. However, there are also substantial challenges, including the need for better development tools, error correction techniques, and hybrid quantum-classical systems. As quantum computing continues to advance, software engineers who are prepared to adapt to this new paradigm will be at the forefront of the next technological revolution.
-The future of software engineering in the age of quantum computing will require a fundamental shift in how engineers think about computation, algorithms, and problem-solving. By embracing these changes and investing in education and professional development, the next generation of software engineers can unlock the full potential of quantum computing.
+Social media is a double-edged sword when it comes to mental health. While it offers numerous benefits, such as fostering social connection, providing support networks, and raising awareness about mental health issues, it also poses risks, including social comparison, cyberbullying, and addiction. The relationship between social media use and mental health is complex, influenced by individual differences, the nature of social media use, and the social context in which it occurs.
 
-\section{The Prompt}
+To mitigate the negative impact of social media, individuals must be educated about healthy social media habits, social media platforms must take responsibility for promoting well-being, and mental health professionals must be prepared to support those who are adversely affected. As social media continues to evolve, it is crucial to strike a balance between leveraging its positive aspects and addressing its potential harms, ultimately promoting a healthier digital environment for all users.
 
-The prompt that generated the article is the following: \texttt{I need a 2000 word academic article on the following subject: The Future of Software Engineering with Quantum Computing.}
+\begin{thebibliography}{9}
 
+\bibitem{statista2023} Statista. (2023). Global social media statistics. Retrieved from \url{https://www.statista.com/statistics/}
+
+\bibitem{smith2018} Smith, A., \& Anderson, M. (2018). Social media use in 2018. Pew Research Center.
+
+\bibitem{hampton2014} Hampton, K. N., Rainie, L., Lu, W., \& Purcell, K. (2014). Social media and the cost of caring. Pew Research Center.
+
+\bibitem{lenhart2015} Lenhart, A., Anderson, M., \& Smith, A. (2015). Teens, technology, and friendships. Pew Research Center.
+
+\bibitem{lup2015} Lup, K., Trub, L., \& Rosenthal, L. (2015). Instagram \#instasad?: Exploring associations among Instagram use, depressive symptoms, negative social comparison, and strangers followed. \textit{Cyberpsychology, Behavior, and Social Networking}, 18(5), 247-252.
+
+\bibitem{tokunaga2010} Tokunaga, R. S. (2010). Following you home from school: A critical review and synthesis of research on cyberbullying victimization. \textit{Computers in Human Behavior}, 26(3), 277-287.
+
+\bibitem{andreassen2017} Andreassen, C. S., Pallesen, S., \& Griffiths, M. D. (2017). The relationship between addictive use of social media, narcissism, and self-esteem: Findings from a large national survey. \textit{Addictive Behaviors}, 64, 287-293.
+
+\bibitem{przybylski2013} Przybylski, A. K., Murayama, K., DeHaan, C. R., \& Gladwell, V. (2013). Motivational, emotional, and behavioral correlates of fear of missing out. \textit{Computers in Human Behavior}, 29(4), 1841-1848.
+
+\bibitem{gerson2017} Gerson, J., Plagnol, A. C., \& Corr, P. J. (2017). Passive and active social media use and well-being: The mediating role of social comparison. \textit{Computers in Human Behavior}, 72, 161-167.
+
+\bibitem{valkenburg2006} Valkenburg, P. M., Peter, J., \& Schouten, A. P. (2006). Friend networking sites and their relationship to adolescents’ well-being and social self-esteem. \textit{CyberPsychology \& Behavior}, 9(5), 584-590.
+
+\end{thebibliography}
+
+\section{Discussion}
+The article was written by ChatGPT 4o. My initial prompt was,
+\begin{center}
+    `Write me a 2000 word academic article on the topic of The Impact of Social Media on Mental Health.'
+\end{center}
+ChatGPT neglected to provide me with references so I asked for them with the following prompt,
+\begin{center}
+    `Add references to your claims.'
+\end{center}
+Then it included the references and citations in its article.
+
+I write this before digging into it -- the article does seem coherent with proper citation, though some of the works cited are locked behind publications that I can't get access to. Where I only have access to an abstract I will look up other sources that might corroborate whatever is being claimed.
+
+\section{Corrections}
+
+\subsection{}
+\begin{center}
+    Adolescents and young adults, in particular, are heavy users, with studies showing that 90\% of teens use social media regularly.\cite{smith2018}
+\end{center}
+While it correctly cites social media usage by `young adults' as being very high -- the study did not include any persons below the age of 18, making its usage of the word `teens' and `adolescents' erroneous. The report does specifically state that 88\% of `young adults', aged 18 - 29, do use any form of social media, so the citation isn't wholly fictious, but its language is quite clumsy and inaccurate.
+
+\subsection{}
+\begin{center}
+    Social media provides a platform for individuals to maintain relationships, especially when face-to-face interaction is not possible\cite{hampton2014}
+\end{center}
+The cited report does not touch on social media's ability to keep people connected -- it deals with the `cost of caring', that we are more exposed to major (and minor) stressors in the lives of our friends and acquaintances and the effects that might have on our well-being. However, the report does link to a previous study  \href{https://www.pewresearch.org/internet/2011/06/16/social-networking-sites-and-our-lives/}{Rainie, L., Purcell, K., Goulet, L. S., \& Hampton, K. N. (2011). \textit{Social networking sites and our lives.} Pew Internet \& American Life Project.}
+in which they do describe `Facebook's ability to keep people in touch, revive `dead' relationships, etc. The citation ChatGPT chose does not refute its claim, but it doesn't directly support it either. E.g., social media was not linked with a large increase in stress for most people.
+
+The study Teens, Technologies and Friends\cite{lenhart2015} might be what it intends to cite here as it does touch on these topics -- especially considering ChatGPT's following paragraph. 
+
+\subsection{}
+\begin{center}
+    Platforms such as Instagram, Twitter, and TikTok have become powerful tools for mental health advocacy, providing a space for individuals and organizations to share information, break stigmas, and promote mental health resources \cite{smith2018}
+\end{center}
+This report doesn't deal with social media as panacea -- it only describes its usage amongst various demographics. Again, ChatGPT might be falsely attributing this report for another -- Teens, Technologies And Friends\cite{lenhart2015} seems to fit the bill, yet again. That report does seem to corroborate the claim so this is only an issue of misattribution.
 \end{document}
